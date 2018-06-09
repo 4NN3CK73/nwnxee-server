@@ -1,0 +1,2 @@
+/usr/bin/ar qc libBeaEngine.a  CMakeFiles/BeaEngine.dir/src/BeaEngine.c.o
+/usr/bin/ranlib libBeaEngine.a
