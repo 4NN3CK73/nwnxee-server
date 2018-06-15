@@ -2,7 +2,7 @@ version: '2.4'
 services:
   nwnxee-server:
     container_name: nwnxee-server
-    image: nwnxee/unified:latest
+    image: nwnxee/unified:latest-full
     env_file: ./config/nwserver.env
     stdin_open: true
     tty: true
@@ -16,7 +16,7 @@ services:
       redis:
         condition: service_started
     volumes:
-      - ./server/:/nwn/home
+      - ~/GAME_RES/:/nwn/home
     restart: always
     ports:
       - "5121:5121/udp"
